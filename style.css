@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -45,7 +49,7 @@ nav {
 
   overflow-y: scroll;
 
-  animation: entering .7s ease-in-out;
+  animation: entering 0.7s ease-in-out;
 }
 
 .memory {
@@ -59,11 +63,11 @@ nav {
 
 .memory small {
   color: #bebebf;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .memory h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
   color: #eaeaea;
 }
 
@@ -87,7 +91,7 @@ nav {
 }
 
 .memory p {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #bebebf;
   line-height: 28px;
 }
@@ -110,8 +114,8 @@ aside {
   background-size: auto 100%;
 }
 
-aside *{
-  animation: entering .7s ease-in-out;
+aside * {
+  animation: entering 0.7s ease-in-out;
 }
 
 aside img:nth-child(2) {
@@ -125,11 +129,34 @@ aside img:nth-child(2) {
 }
 
 aside p {
-  font-size: 32px;
+  font-size: 3.2rem;
   text-align: center;
 }
 
 aside span {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #9e9ea0;
+}
+
+@media (max-width: 768px) {
+  :root{
+    font-size: 54%;
+  }
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas:
+      "profile"
+      "timeline";
+  }
+
+  aside {
+    border-right: none;
+    padding: 32px 12px;
+  }
+
+  nav {
+    overflow-y: visible;
+    padding: 22px;
+  }
 }
