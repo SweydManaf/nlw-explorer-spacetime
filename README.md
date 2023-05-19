@@ -39,6 +39,8 @@ Aplicação Web Responsiva de Cápsula do tempo.
 
 - [Visite o projeto online](https://sweydmanaf.github.io/nlw-explorer-spacetime/)
 
+Este projeto foi desenvolvido durante a semana da NLW, evento feito pela Rocketseat, que ocorreu em maio de 2023.
+
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/xllhBAkuLVflqR1WB9SzTj/Capsula-do-Tempo---Trilha-Explorer?type=design&node-id=306%3A3&t=l2mqywaCaALXnqil-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
