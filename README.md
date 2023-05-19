@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - Git e Github
-- 
+
 ## 💻 Projeto
 
 Aplicação Web Responsiva de Cápsula do tempo.
