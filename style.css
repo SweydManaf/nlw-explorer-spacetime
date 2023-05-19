@@ -28,7 +28,18 @@
 
   to {
     opacity: 1;
+    transform: translateY(50);
+  }
+}
+
+@keyframes down-infinite {
+  from {
+    transform: translateY(-20px);
+    opacity: 0.3;
+  }
+  to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -59,6 +70,7 @@ nav {
 
   text-decoration: none;
   margin-bottom: 64px;
+
 }
 
 .memory small {
@@ -84,6 +96,13 @@ nav {
   height: 280px;
   overflow: hidden;
   border-radius: 8px;
+  border: 3px solid transparent;
+  transition: border 0.3s ease-out;
+
+}
+
+.memory:hover div{
+  border-color: #633bbc;
 }
 
 .memory:hover img {
@@ -94,6 +113,18 @@ nav {
   font-size: 1.8rem;
   color: #bebebf;
   line-height: 28px;
+}
+
+.memory p a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color .3s;
+}
+
+.memory p a:hover {
+  color: #633bbc;
+  text-decoration: underline;
 }
 
 aside {
@@ -138,8 +169,12 @@ aside span {
   color: #9e9ea0;
 }
 
+aside i {
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
-  :root{
+  :root {
     font-size: 54%;
   }
   body {
@@ -153,6 +188,14 @@ aside span {
   aside {
     border-right: none;
     padding: 32px 12px;
+    height: 100vh;
+  }
+
+  aside i {
+    visibility: visible;
+    font-size: 2.3rem;
+    margin-top: 2rem;
+    animation: down-infinite 1.5s infinite;
   }
 
   nav {
